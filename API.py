@@ -56,9 +56,9 @@ async def test():
     # resp = await deactivate_invoice(3)
     # pprint(resp)
     inv = Invoice_Pydantic(network="BTC", coin="BTC", fiat="UAH", recipient_addr="addr1",
-                          expected_fiat_amount=500)
+                          expected_fiat_amount=600)
 
     resp = await create_invoice(inv)
     pprint(resp)
 
-asyncio.run(test())
+# asyncio.run(test())
